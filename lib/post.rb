@@ -1,3 +1,4 @@
+require 'pry'
 class Post
   
   attr_accessor :title, :author
@@ -25,6 +26,7 @@ class Post
     if Author.name
   else
     self.author.name
+    binding.pry
   end
   end
   
