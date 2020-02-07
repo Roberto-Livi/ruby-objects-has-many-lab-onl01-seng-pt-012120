@@ -23,6 +23,8 @@ class Post
   
   def author_name
     if Author.name
+  else
+    self.author.name
   end
   end
   
