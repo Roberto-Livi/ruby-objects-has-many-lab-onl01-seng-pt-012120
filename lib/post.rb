@@ -22,10 +22,11 @@ class Post
   end
   
   def author_name
-    if Author.name
-  else
-    self.author.name
-  end
+    if self.author.name.count == 0
+      nil
+    else
+      self.author.name
+    end
   end
   
   
