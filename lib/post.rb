@@ -25,7 +25,10 @@ class Post
     if @@all.count == 0
       nil
   else
-    self.author.name
+    if self.author.count == 0
+      nil
+    else
+      self.author.name
   end
   end
   
