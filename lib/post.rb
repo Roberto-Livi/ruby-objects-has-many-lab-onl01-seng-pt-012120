@@ -22,9 +22,6 @@ class Post
   end
   
   def author_name
-    if @@all.count == 0
-      nil
-  else
     if self.author.count == 0
       nil
     else
